@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '', component: AppLayoutComponent,
     children: [
-      { path: '', loadChildren: () => import('./pages/modules/dashboard/dashboard.module').then(m => m.DashboardModule) }
+      { path: '', loadChildren: () => import('./pages/modules/dashboard/dashboard.module').then(m => m.DashboardModule) },
+      { path: 'members', loadChildren: () => import('./pages/modules/membership/membership.module').then(m => m.MembershipModule) },
     ]
   },
   { path: 'auth', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) },
