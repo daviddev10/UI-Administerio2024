@@ -1,0 +1,18 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzTheme="light" nzBreakpoint="md"
+    [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+    <app-app-sidebar [isCollapsed]="isCollapsed"></app-app-sidebar>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <app-app-nav-header (onChangeCollapsed)="isCollapsed=!isCollapsed" [isCollapsed]="isCollapsed">
+      </app-app-nav-header>
+    </nz-header>
+    <nz-content>
+      <h2>Breadcrumbs</h2>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
