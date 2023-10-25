@@ -11,12 +11,14 @@ import { AppSidebarComponent } from './components/app-sidebar/app-sidebar.compon
 import { AppNavHeaderComponent } from './components/app-nav-header/app-nav-header.component';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { AppBreadcrumbComponent } from './components/app-breadcrumb/app-breadcrumb.component';
 
 @NgModule({
   declarations: [
     AppLayoutComponent,
     AppSidebarComponent,
-    AppNavHeaderComponent
+    AppNavHeaderComponent,
+    AppBreadcrumbComponent
   ],
   imports: [
     RouterModule,

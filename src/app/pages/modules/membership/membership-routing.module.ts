@@ -4,8 +4,8 @@ import { MemberListComponent } from './components/member-list/member-list.compon
 import { MainMemberFormComponent } from './controllers/main-member-form.component';
 
 const routes: Routes = [
-  { path: '', component: MemberListComponent },
-  { path: 'nuevo', component: MainMemberFormComponent }
+  { path: '', component: MemberListComponent, },
+  { path: 'nuevo', component: MainMemberFormComponent, data: { breadcrumb: "Nuevo miembro" }, }
 ];
 
 @NgModule({
